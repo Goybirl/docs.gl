@@ -7,7 +7,10 @@
             <code class="function">glGenerateMipmap</code> generates mipmaps for the texture attached
             to <em class="parameter"><code>target</code></em> of the active texture unit. For cube map textures,
             a <code class="constant">GL_INVALID_OPERATION</code> error is generated if the texture
-            attached to <em class="parameter"><code>target</code></em> is not cube complete.
+            attached to <em class="parameter"><code>target</code></em> is not cube complete(All six
+     targets have identical, positive, and square dimensions, the array
+     0 of all six targets were specified with the same internalformat,
+     and the array 0 of all six targets have the same border width).
         </p><p>
             Mipmap generation replaces texel array levels
             <math overflow="scroll">
